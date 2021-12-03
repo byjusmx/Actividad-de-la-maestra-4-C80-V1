@@ -43,7 +43,7 @@ export default class IssLocationScreen extends Component {
                         justifyContent: "center",
                         alignItems: "center"
                     }}>
-                    <Text>Loading</Text>
+                    <Text>Cargando</Text>
                 </View>
             )
         } else {
@@ -52,7 +52,7 @@ export default class IssLocationScreen extends Component {
                     <SafeAreaView style={styles.droidSafeArea} />
                     <ImageBackground source={require('../assets/bg.png')} style={styles.backgroundImage}>
                         <View style={styles.titleContainer}>
-                            <Text style={styles.titleText}>ISS Location</Text>
+                            <Text style={styles.titleText}>Localización EEI</Text>
                         </View>
                         <View style={styles.mapContainer}>
                             <MapView
@@ -72,10 +72,10 @@ export default class IssLocationScreen extends Component {
                             </MapView>
                         </View>
                         <View style={styles.infoContainer}>
-                            <Text style={styles.infoText}>Latitude: {this.state.location.latitude}</Text>
-                            <Text style={styles.infoText}>Longitude: {this.state.location.longitude}</Text>
-                            <Text style={styles.infoText}>Altitude (KM): {this.state.location.altitude}</Text>
-                            <Text style={styles.infoText}>Velocity (KM/H): {this.state.location.velocity}</Text>
+                            <Text style={styles.infoText}>Latitud: {this.state.location.latitude}</Text>
+                            <Text style={styles.infoText}>Longitud: {this.state.location.longitude}</Text>
+                            <Text style={styles.infoText}>Altitud (KM): {this.state.location.altitude}</Text>
+                            <Text style={styles.infoText}>Velocidad (KM/H): {this.state.location.velocity}</Text>
                         </View>
                     </ImageBackground>
                 </View>
